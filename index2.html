@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        #nv {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: right;
+            padding: 10px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; /* Added wrap for smaller screens */
+        }
+
+        span {
+            border: 2px solid rgb(184, 18, 45);
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px; /* Added margin for spacing */
+        }
+        #nv span {
+            border: 2px solid rgb(184, 18, 45);
+            border-radius: 5px;
+            padding: 5px;
+            justify-content: space-between;
+            margin-right: 10px; /* Set the right margin to 30px */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        span:hover {
+            background-color: rgb(184, 18, 45);
+        }
+
+        span:visited {
+            color: yellow;
+        }
+
+        span:hover {
+            color: green;
+            transition-duration: 0.5s;
+        }
+
+        span:active {
+            color: orange;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: rgb(172, 35, 58);
+            text-align: center;
+            margin-top: 50px; /* Adjusted margin */
+            text-shadow: 2px 2px 4px yellow;
+        }
+
+        .grid {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 110px 110px 110px 110px;
+            grid-template-rows: 110px 110px;
+            row-gap: 5px;
+            column-gap: 5px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .grid-item {
+            border: 5px solid white;
+            border-radius: 50%;
+            padding: 35px;
+            color: wheat;
+            text-shadow: 2px 2px 4px yellow;
+            box-shadow: 0 0 10px yellow;
+            transition: background-color 0.5s, color 0.5s; /* Added transition */
+        }
+
+        .grid-item:hover {
+            background-color: rgb(184, 18, 45);
+            color: green;
+        }
+
+        @media (max-width: 600px) {
+            #nv {
+                text-align: center;
+                padding: 5px;
+            }
+
+            span {
+                margin: 5px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="nv">
+        <span><a href="index.html">Home</a></span>
+        <span><a href="index1.html">About</a></span>
+        <span><a href="index2.html">Skills</a></span>
+        <span><a href="index3.html">Projects</a></span>
+        <span><a href="index4.html">Contact</a></span>
+    </div>
+    <h1>Skills</h1>
+    <div class="grid">
+        <div class="grid-item">Python</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">Mysql</div>
+        <div class="grid-item">Java</div>
+        <div class="grid-item">HTML</div>
+        <div class="grid-item">Css</div>
+        <div class="grid-item">Java</div>
+        <div class="grid-item">React</div>
+    </div>
+</body>
+</html>

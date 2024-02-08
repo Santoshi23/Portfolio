@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #3d3b40;
+        }
+
+        #nv {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: right;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        span {
+            border: 2px solid rgb(184, 18, 45);
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #nv span {
+        border: 2px solid rgb(184, 18, 45);
+        border-radius: 5px;
+        padding: 5px;
+        justify-content: space-between;
+        margin-right: 10px; /* Set the right margin to 30px */
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        span:hover {
+            background-color: rgb(184, 18, 45);
+        }
+
+        span:visited {
+            color: yellow;
+        }
+
+        span:hover {
+            color: green;
+            transition-duration: 3s;
+        }
+
+        span:active {
+            color: orange;
+        }
+
+        #ftr {
+            height: 295px;
+            border: 2px solid red;
+            width: 200px;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: black;
+            box-shadow: 2px 2px 4px yellow;
+        }
+
+        .change {
+            text-align: center;
+            color: blue;
+        }
+
+        .inptbox {
+            margin-top: 15px;
+        }
+
+        .inpt {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            width: 60px;
+            padding: 3px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #icon {
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+        }
+
+        img {
+            border: 5px solid white;
+            padding: 3px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px;
+        }
+
+        .icon {
+            width: 30px;
+            margin-top: 10px;
+        }
+        #ftr:hover {
+        background-color: rgba(255, 0, 0, 0.3);
+        transition: background-color 0.5s ease;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #nv{
+                padding: 5px;
+                text-align: center;
+            }
+            /* span{
+                padding: 3px;
+                margin-right: 5px;
+            } */
+            body {
+                font-size: 14px;
+            }
+            #ftr {
+                width: 100%;
+            }
+
+            .inpt {
+                width: 90%; /* Adjusted input width for smaller screens */
+            }
+
+            .btn {
+                width: 100%; /* Adjusted button width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="nv">
+        <span><a href="index.html">Home</a></span>
+        <span><a href="index1.html">About</a></span>
+        <span><a href="index2.html">Skills</a></span>
+        <span><a href="index3.html">Projects</a></span>
+        <span><a href="index4.html">Contact</a></span>
+    </div>
+    <div id="ftr">
+        <div class="change">
+            <h1>Contact</h1>
+            <p>Have a question or want to work together? Leave your <br>
+            details and I'll get back to you as soon as possible</p>
+            <div class="inptbox">
+                <label>
+                    <input class="inpt" type="text" placeholder="Name">
+                </label> <br>
+                <label>
+                    <input class="inpt" type="email" placeholder="Email">
+                </label> <br>
+                <label>
+                    <input class="inpt" type="text" placeholder="Message">
+                </label> <br>
+                <label>
+                    <input class="btn" type="submit" placeholder="Submit">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="icon">
+        <a href="https://www.linkedin.com/in/santoshi-chaudhary-56a649261/"><img class="icon" src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt=""></a>
+        <a href="https://github.com/Santoshi23"><img class="icon" src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" alt=""></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><img class="icon" src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt=""></a>
+    </div>
+</body>
+</html>

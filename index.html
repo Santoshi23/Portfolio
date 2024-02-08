@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #nv {
+            background-color: black;
+            background-size: cover;
+            height: 2rem;
+            color: white;
+            text-align: right;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        span {
+            border: 2px solid rgb(184, 18, 45);
+            border-radius: 5px;
+            padding: px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        span:hover {
+            background-color: rgb(184, 18, 45);
+            color: green;
+        }
+
+        span:visited {
+            color: yellow;
+        }
+
+        span:active {
+            color: orange;
+        }
+
+        #wd {
+            text-align: center;
+            color: white;
+            background-color: rgb(36, 33, 33);
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dp {
+            border: 2px solid rgb(184, 18, 45);
+            height: 15rem;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            #nv {
+                text-align: center;
+            }
+
+            .dp {
+                height: 10rem; /* Adjust the image height for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="nv">
+        <span><a href="index.html">Home</a></span>
+        <span><a href="index1.html">About</a></span>
+        <span><a href="index2.html">Skills</a></span>
+        <span><a href="index3.html">Projects</a></span>
+        <span><a href="index4.html">Contact</a></span>
+    </div>
+    <div id="wd">
+        <h1>Hello, I am Santoshi</h1>
+        <h1>I am a Web Developer</h1>
+        <img class="dp" src="https://i.pinimg.com/originals/16/2d/2c/162d2cb212537fe50230b73bb7af57f7.jpg" alt="">
+    </div>
+</body>
+</html>

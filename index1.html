@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+
+        }
+
+        #nv {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: right;
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        #nv span {
+            border: 2px solid rgb(184, 18, 45);
+            border-radius: 5px;
+            padding: 5px;
+            justify-content: space-between;
+            margin-right: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #nv span:hover {
+            background-color: rgb(184, 18, 45);
+        }
+
+        #nv span:visited {
+            color: yellow;
+        }
+
+        #nv span:hover {
+            color: green;
+            transition-duration: 3s;
+        }
+
+        #nv span:active {
+            color: orange;
+        }
+
+        section {
+            background-color: rgb(41, 37, 37);
+            background-size: cover;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: 40px;
+            height: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        .hi{
+            display: flex;
+            flex-direction: column;
+
+
+        }
+        #about {
+            box-shadow: 0 0 10px rgba(230, 11, 193, 0.5);
+            max-width: 20rem;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            width: 100%;
+            margin:0 auto;
+            margin-top: 100px;
+            display: flex;
+     
+        }
+        
+        #about:hover {
+            background-color: rgba(230, 11, 193, 0.5);
+            transition: background-color 0.5s ease;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+            .device-margin{
+                margin-top: 200px;
+
+            }
+            #nv {
+                padding: 10px;
+                text-align: center;
+                background-color: rgb(41, 37, 37);
+            }
+
+            #nv span {
+                display: block;
+                padding: 10px 0;
+                margin: 5px 0;
+                text-align: center;
+            }
+            #nv{
+            text-align: center;
+            }
+            #nav span{
+                margin-right: 0;
+            }
+
+            section {
+                padding: 10px;
+                margin-top: 80px; /* Adjusted margin-top for the section */
+            }
+
+            #about {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 15px;
+                color: white;
+                width: 100%;
+                margin-top:0px;
+                background-color: rgba(230, 11, 193, 0.1);
+            }
+
+            #about:hover {
+                background-color: rgba(230, 11, 193, 0.3);
+                transition: background-color 0.5s ease;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nv">
+        <span><a href="index.html">Home</a></span>
+        <span><a href="index1.html">About</a></span>
+        <span><a href="index2.html">Skills</a></span>
+        <span><a href="index3.html">Projects</a></span>
+        <span><a href="index4.html" class="cnt">Contact</a></span>
+    </div>
+    <section>
+
+        <h1 class="device-margin">About</h1>
+        <div id="about" class="hi">
+            <h1>Hello</h1>
+            <div >
+                <p>Hello, I'm Santoshi, a dedicated software engineering student at Navgurukul. My journey in the world of technology has been nothing short of exhilarating, and I've discovered my true passion in web development. As a diligent learner, I find joy in spending my time coding and embracing the thrill of tackling new challenges. Currently pursuing my education at Navgurukul, I am gaining a strong foundation in software engineering principles and practices. I take pride in my ability to adapt swiftly to new challenges and projects, a quality that fuels my enthusiasm for continuous learning.</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+
+</html>
